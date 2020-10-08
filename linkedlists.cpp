@@ -55,7 +55,7 @@ void swapNodeWithNextNode(mynode* head, int index){
 	//now we are at one, in the diagram above
 	mynode* node2 = new mynode();
 	mynode* node3 = new mynode();
-	
+
 	node2 = head->next;
 	node3 = head->next->next;
 	head->next = node3;
@@ -87,3 +87,19 @@ int main() {
 	printNodes(myHeadNode);
 	return 0;
 }
+///
+///OUTPUT:
+///
+// 1
+// 2
+// 3
+// 4
+// 5
+//
+// 3 AND 4 SWAPPED
+//
+// 1
+// 2
+// 4
+// 3
+// 5
