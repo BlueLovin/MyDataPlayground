@@ -25,7 +25,7 @@ public:
     }
 };
 
-void printTree(TreeNode* root){
+void printTree(TreeNode* root){ //function only works because there are only three elements in this tree
     std::cout<< "val: " <<root->val<<std::endl;
     std::cout << "left: " << root->left->val<<std::endl;
     std::cout << "right: " << root->right->val<<std::endl;
